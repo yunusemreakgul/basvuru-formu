@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvuru Formu</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="" method="post">
+        <div class="form-row">
+            <label for="adi">İsim ve Soyisim:</label>
+            <input name="adi" id="adi" type="text" required placeholder="İsim ve Soyisim giriniz">
+        </div>
+        <div class="form-row">
+            <label for="tel">Telefon numarası:</label>
+            <input name="tel" id="tel" type="tel" required placeholder="0550000000">
+        </div>
+        <div class="form-row">
+            <label for="email">Eposta:</label>
+            <input name="email" id="email" type="email" required placeholder="ads@asd.com">
+        </div>
+        <div class="form-row">
+            <label for="Mesaj">Açıklama:</label>
+            <textarea name="mesaj" id="Mesaj"  rows="6" required></textarea>
+        </div>
+        <div class="form-row">
+            <label for="sebep">İletişin Nedeni</label>
+            <select name="sebebi" id="sebep" required>
+                <option value="Seçiniz" disabled selected>Seçiniz</option>
+                <option value="Sikayet">Şikayet</option>
+                <option value="Öneri">Öneri</option>
+                <option value="Tavsiye">Tavsiye</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <p>Yerleşke:</p>
+            <div class="radio-container">
+                <label ><input  type="radio" name="konum" value="Tepebağı"> Tepebağı</label>
+                <label ><input  type="radio" name="konum" value="Güzelce"> Güzelce</label>
+                <label ><input  type="radio" name="konum" value="Tuna"> Tuna</label>  
+            </div>
+        </div>    
+        <div class="form-row">
+            <button type="reset">Sıfırla</button>
+            <button type="submit">Gönder</button>
+        </div>
+
+    </form>
+</body>
+</html>
